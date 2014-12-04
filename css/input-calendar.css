@@ -1,5 +1,9 @@
 #react {
-    margin: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    height: 80vh;
 }
 
 .input-calendar {
@@ -150,4 +154,16 @@
 
 .input-calendar .today-btn {
     cursor: pointer;
+}
+
+.input-calendar .cell.day.today {
+    position: relative;
+}
+
+.input-calendar .cell.day.today:after {
+    content: '.';
+    position: absolute;
+    bottom: 15px;
+    font-size: 20px;
+    color: #F39C12;
 }
