@@ -44,10 +44,6 @@ module.exports = {
                 if (_viewHelper.prev)
                     this.prevView(this.state.date);
                 break;
-            case Const.keys.backspace:
-                if (_viewHelper.next)
-                    this.nextView();
-                break;
             case Const.keys.esc:
                 this.setState({isVisible: false });
                 break;
