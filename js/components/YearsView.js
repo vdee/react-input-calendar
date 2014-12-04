@@ -56,10 +56,12 @@ module.exports = React.createClass({
     
     cellClick: function (e) {
         var year = parseInt(e.target.innerHTML, 10);
+        if (isNaN(year)) {
+            return;
+        }
         var date = this.props.date.year(year);
         this.props.prevView(date);
     },
-
 
     render: function () {
         var years = this.getYears();

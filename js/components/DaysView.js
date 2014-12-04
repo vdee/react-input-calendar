@@ -34,6 +34,10 @@ module.exports = React.createClass({
             date = parseInt(cell.innerHTML, 10),
             newDate = this.props.date;
 
+        if (isNaN(date)) {
+            return;
+        }
+
         if (cell.className.indexOf('prev') > -1 ) {
             newDate.subtract(1, 'months');
         } else if (cell.className.indexOf('next') > -1) {

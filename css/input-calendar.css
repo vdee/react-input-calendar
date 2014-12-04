@@ -18,6 +18,11 @@
     width: 175px;
     text-align: center;
     left: 140px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .input-calendar .input-calendar-value {
@@ -52,6 +57,11 @@
     text-align: center;
     cursor: pointer;
     border: 1px solid #fff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .input-calendar .cell:hover {
