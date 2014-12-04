@@ -4,6 +4,9 @@ var Calendar = require('./components/Calendar');
 window.React = React; // export for http://fb.me/react-devtools
 
 React.render(
-    <Calendar />,
+    <Calendar
+        date={'3-12-2012'}
+        format="DD-MM-YYYY"
+    />,
     document.getElementById('react')
 );
