@@ -4,6 +4,7 @@ var _keyDownViewHelper = [
     {
         prev: false,
         next: true,
+        exit: true,
         unit: 'day',
         upDown: 7
     },
@@ -43,6 +44,10 @@ module.exports = {
             case Const.keys.enter:
                 if (_viewHelper.prev)
                     this.prevView(this.state.date);
+
+                if (_viewHelper.exit)
+                    this.setState({isVisible: false});
+
                 break;
             case Const.keys.esc:
                 this.setState({isVisible: false });
