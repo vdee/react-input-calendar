@@ -1,5 +1,5 @@
 var React = require('react');
-var Calendar = require('./components/Calendar');
+var Calendar = require('react-input-calendar');
 
 window.React = React; // export for http://fb.me/react-devtools
 
