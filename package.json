@@ -5,7 +5,7 @@
   "repository": "",
   "main": "js/app.js",
   "dependencies": {
-    "react-input-calendar": "^0.0.2"
+    "react-input-calendar": "^0.0.4"
   },
   "devDependencies": {
     "browserify": "^6.3.3",
