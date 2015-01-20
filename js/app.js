@@ -5,8 +5,8 @@ window.React = React; // export for http://fb.me/react-devtools
 
 React.render(
     <Calendar
-        date={'3-12-2012'}
-        format="DD-MM-YYYY"
+        date={'01-20-2015'}
+        format="MM-DD-YYYY"
     />,
     document.getElementById('react')
 );
